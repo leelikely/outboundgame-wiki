@@ -1,0 +1,39 @@
+<!-- file: /contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Outbound Game Wiki</title>
+    <meta name="description" content="Get in touch with the Outbound Guide team.">
+    <link rel="canonical" href="https://outboundgame.wiki/contact.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="page-content">
+        <h1>Contact Us</h1>
+        <p>Have a question, suggestion, or want to contribute a guide? We'd love to hear from you!</p>
+        <p><strong>Note:</strong> This is a static website, so the form below does not send messages directly. Please use it to draft your message, then email us at <a href="mailto:hello@outboundgame.wiki">hello@outboundgame.wiki</a>.</p>
+
+        <form id="contact-form" class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="form-message" class="form-message"></div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
