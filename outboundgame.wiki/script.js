@@ -98,6 +98,7 @@ function loadFooter() {
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="privacy-policy.html">Privacy Policy</a></li>
                 <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="all-guides.html">All Guides</a></li>
             </ul>
             <p class="footer-copy">
                 &copy; ${new Date().getFullYear()} Outbound Game Wiki. Fan-made and not affiliated with the official game.
