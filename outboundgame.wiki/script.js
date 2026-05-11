@@ -105,15 +105,16 @@ function loadFooter() {
         </footer>
     `;
     footerContainer.innerHTML = footerHTML;
+    // 页脚 In‑Page Push 激活
     activateFooterAd();
 }
 
-/** 激活页脚 In-Page Push 广告 */
+/** 激活页脚 In‑Page Push 广告 */
 function activateFooterAd() {
     var container = document.getElementById('ad-footer-container');
     if (container) {
         var s = document.createElement('script');
-        s.dataset.zone = '10992811';   /* 推荐为页脚创建独立 zone */
+        s.dataset.zone = '10992811';
         s.src = 'https://nap5k.com/tag.min.js';
         container.appendChild(s);
     }
