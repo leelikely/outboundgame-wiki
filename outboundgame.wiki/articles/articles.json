@@ -7,6 +7,13 @@
         "filename": "system-requirements"
     },
     {
+        "title": "Outbound Links – Official Stores, Socials, and More",
+        "date": "2026-05-11",
+        "category": "Links",
+        "excerpt": "A curated collection of official Outbound links: store pages, physical editions, social media, and community hubs.",
+        "filename": "outbound-links"
+    },
+    {
         "title": "Gameplay Guide – Building, Exploring, and Living Your Best Van Life",
         "date": "2026-05-11",
         "category": "Guides",
@@ -26,6 +33,20 @@
         "category": "Announcement",
         "excerpt": "Outbound will now release earlier on May 11th on Steam, Epic Games Store, and Xbox, to avoid competing with Subnautica 2. The demo goes offline on May 8th.",
         "filename": "coming-earlier-on-may-11th"
+    },
+    {
+        "title": "May 11th Release Time, Pricing, and Launch Discount",
+        "date": "2026-05-07",
+        "category": "Announcement",
+        "excerpt": "Everything you need to know about Outbound's launch on May 11: exact release time (2pm UTC), regional pricing, and the 10% launch discount.",
+        "filename": "may-11-release-time-pricing-discount"
+    },
+    {
+        "title": "Outbound is almost here! Here is some important release info",
+        "date": "2026-05-07",
+        "category": "Announcement",
+        "excerpt": "Key details for Outbound's launch: release dates across platforms, global launch time, pricing, School Bus Adventures DLC, Xbox Game Pass, and more.",
+        "filename": "outbound-almost-here-release-info"
     },
     {
         "title": "Demo Version 1.0.0.9",
