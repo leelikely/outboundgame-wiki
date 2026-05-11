@@ -27,7 +27,18 @@
             <div id="home-articles" class="articles-grid">
                 <!-- Dynamically populated by script.js -->
             </div>
-            <div class="ad-banner">[AD BANNER PLACEHOLDER]</div>
+            <div class="ad-banner" id="ad-banner-container"></div>
+            <script>
+              (function() {
+                var container = document.getElementById('ad-banner-container');
+                if (container) {
+                  var s = document.createElement('script');
+                  s.dataset.zone = '10992811';
+                  s.src = 'https://nap5k.com/tag.min.js';
+                  container.appendChild(s);
+                }
+              })();
+            </script>
         </section>
     </main>
 

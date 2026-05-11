@@ -41,7 +41,7 @@ function loadNavbar() {
     const links = [
         { name: 'Home', href: homeHref, active: isHome },
         { name: 'Guides', href: guidesHref, active: false },
-        { name: 'Map', href: 'map.html', active: currentPath === 'map.html' }, // NEW
+        { name: 'Map', href: 'map.html', active: currentPath === 'map.html' },
         { name: 'About', href: 'about.html', active: currentPath === 'about.html' },
         { name: 'Contact', href: 'contact.html', active: currentPath === 'contact.html' }
     ];
@@ -91,7 +91,7 @@ function loadFooter() {
 
     const footerHTML = `
         <footer class="site-footer">
-            <div class="ad-footer">[ADSENSE / MONETAG AD PLACEHOLDER]</div>
+            <div class="ad-footer" id="ad-footer-container"></div>
             <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -105,6 +105,18 @@ function loadFooter() {
         </footer>
     `;
     footerContainer.innerHTML = footerHTML;
+    activateFooterAd();
+}
+
+/** 激活页脚 In-Page Push 广告 */
+function activateFooterAd() {
+    var container = document.getElementById('ad-footer-container');
+    if (container) {
+        var s = document.createElement('script');
+        s.dataset.zone = '10992811';   /* 推荐为页脚创建独立 zone */
+        s.src = 'https://nap5k.com/tag.min.js';
+        container.appendChild(s);
+    }
 }
 
 /* ===== Home Page: Load Articles from JSON ===== */

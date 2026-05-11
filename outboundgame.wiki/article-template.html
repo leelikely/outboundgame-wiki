@@ -27,7 +27,18 @@
             </div>
         </article>
 
-        <div class="ad-content">[ADSENSE / MONETAG AD PLACEHOLDER]</div>
+        <div class="ad-content" id="ad-content-container"></div>
+        <script>
+          (function() {
+            var container = document.getElementById('ad-content-container');
+            if (container) {
+              var s = document.createElement('script');
+              s.dataset.zone = '10992811';   /* 推荐为文章页创建独立 zone，以区分统计 */
+              s.src = 'https://nap5k.com/tag.min.js';
+              container.appendChild(s);
+            }
+          })();
+        </script>
     </main>
 
     <footer id="footer"></footer>
