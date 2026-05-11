@@ -41,6 +41,7 @@ function loadNavbar() {
     const links = [
         { name: 'Home', href: homeHref, active: isHome },
         { name: 'Guides', href: guidesHref, active: false },
+        { name: 'Map', href: 'map.html', active: currentPath === 'map.html' }, // NEW
         { name: 'About', href: 'about.html', active: currentPath === 'about.html' },
         { name: 'Contact', href: 'contact.html', active: currentPath === 'contact.html' }
     ];
@@ -75,7 +76,6 @@ function setupMobileMenu() {
         hamburger.classList.toggle('active');
     });
 
-    // Close menu when a link is clicked (mobile)
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -117,7 +117,6 @@ async function loadHomeArticles() {
         if (!response.ok) throw new Error('Failed to load articles list');
         const articles = await response.json();
 
-        // Sort by date descending
         articles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
         if (articles.length === 0) {
@@ -164,28 +163,22 @@ async function loadArticle() {
         if (!response.ok) throw new Error('Article not found');
         const mdContent = await response.text();
 
-        // Parse frontmatter
         const { meta, content } = parseFrontmatter(mdContent);
 
-        // Update page title
         document.title = meta.title ? `${meta.title} - Outbound Guide` : 'Outbound Guide';
         document.getElementById('article-title').textContent = meta.title || 'Untitled';
         
-        // Meta info
         const metaContainer = document.getElementById('article-meta');
         const dateStr = meta.date ? new Date(meta.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : '';
         const categoryStr = meta.category ? `<span class="category-badge">${escapeHTML(meta.category)}</span>` : '';
         metaContainer.innerHTML = `${dateStr ? `<span>${dateStr}</span>` : ''} ${categoryStr}`;
 
-        // Render Markdown (requires marked.js)
         if (typeof marked !== 'undefined') {
             document.getElementById('article-content').innerHTML = marked.parse(content);
         } else {
-            // Fallback: show as pre text
             document.getElementById('article-content').innerHTML = `<pre>${escapeHTML(content)}</pre>`;
         }
 
-        // Update meta description (SEO)
         let descriptionMeta = document.querySelector('meta[name="description"]');
         if (!descriptionMeta) {
             descriptionMeta = document.createElement('meta');
@@ -198,7 +191,6 @@ async function loadArticle() {
             descriptionMeta.setAttribute('content', `Guide for ${meta.title} in Outbound game.`);
         }
 
-        // Update canonical link
         let canonicalLink = document.querySelector('link[rel="canonical"]');
         if (!canonicalLink) {
             canonicalLink = document.createElement('link');
@@ -218,16 +210,6 @@ function showArticleError(message) {
     document.getElementById('article-content').innerHTML = `<p>${message}</p>`;
 }
 
-/**
- * Simple YAML frontmatter parser.
- * Expects:
- * ---
- * title: ...
- * date: ...
- * category: ...
- * excerpt: ...
- * ---
- */
 function parseFrontmatter(mdText) {
     const match = mdText.match(/^---\s*\n([\s\S]*?)\n---\s*\n/);
     if (!match) return { meta: {}, content: mdText };
@@ -255,7 +237,6 @@ function setupContactForm() {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        // Simple static handling: show thank you message and suggest mailto
         const name = document.getElementById('name').value.trim();
         messageDiv.innerHTML = `
             <strong>Thanks for reaching out, ${escapeHTML(name) || 'friend'}!</strong><br>
