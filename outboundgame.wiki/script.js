@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (currentPath === 'video.html') {
         loadVideoPlayer();
     } else if (currentPath === 'all-guides.html') {
-        // all-guides.html 本身是静态的，无需加载动态内容
+        // 静态页面无需动态加载
     } else if (document.getElementById('article-content')) {
         loadArticle();
     } else if (document.getElementById('contact-form')) {
@@ -99,6 +99,7 @@ function loadFooter() {
     activateFooterAd();
 }
 
+/** 为页脚注入 In‑Page Push 广告（安全容器方式） */
 function activateFooterAd() {
     const container = document.getElementById('ad-footer-container');
     if (container) {
