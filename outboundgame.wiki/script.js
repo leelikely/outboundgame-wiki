@@ -44,7 +44,10 @@ function loadNavbar() {
     const navbarHTML = `
         <nav class="navbar">
             <div class="navbar-container">
-                <a href="index.html" class="logo">Outbound<span>Guide</span></a>
+                <a href="index.html" class="logo">
+                    <img src="/images/logo-icon.png" alt="Outbound Guide logo" style="height: 30px; margin: 0;">
+                    Outbound<span>Guide</span>
+                </a>
                 <ul class="nav-links" id="nav-links">
                     ${links.map(link => 
                         `<li><a href="${link.href}" class="${link.active ? 'active' : ''}">${link.name}</a></li>`
@@ -256,15 +259,12 @@ async function loadArticle() {
         const categoryStr = meta.category ? `<span class="category-badge">${escapeHTML(meta.category)}</span>` : '';
         metaContainer.innerHTML = `${dateStr ? `<span>${dateStr}</span>` : ''} ${categoryStr}`;
 
-        // 渲染 Markdown 内容
         let markdownHTML = (typeof marked !== 'undefined') ? marked.parse(content) : `<pre>${escapeHTML(content)}</pre>`;
         
-        // 移除正文中可能存在的第一个 <h1> 标签，避免与页面顶部标题重复
+        // 移除正文中的第一个 <h1> 避免重复标题
         markdownHTML = markdownHTML.replace(/<h1[^>]*>.*?<\/h1>/, '');
 
-        // 统一在末尾添加支持信息
         const supportHTML = `<div class="support-message" style="margin-top:3em;"><br><br><p>If you enjoy our content, you can also support our creators by visiting <a href="https://omg10.com/4/10992539" target="_blank">https://omg10.com/4/10992539</a>. Your support and encouragement keep us moving forward. Thank you so much!</p></div>`;
-
         document.getElementById('article-content').innerHTML = markdownHTML + supportHTML;
 
         let descriptionMeta = document.querySelector('meta[name="description"]');
