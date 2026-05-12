@@ -17,5 +17,3 @@ excerpt: Patch notes for Demo Version 1.0.0.9: volume adjustments, new volume sl
 - Add one missing icon for a campfire on the map
 
 ---
-
-*If you enjoy the demo, please take a moment to leave a review on the Steam page. This helps us a lot! Thank you! 🫶*

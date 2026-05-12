@@ -21,5 +21,3 @@ excerpt: Patch notes for Demo Version 1.0.0.4: multiplayer button, side tasks, t
 - Improved networking stability
 
 ---
-
-*If you enjoyed the demo, please take a moment to leave a review on the Steam page. This helps us a ton! 🫶*

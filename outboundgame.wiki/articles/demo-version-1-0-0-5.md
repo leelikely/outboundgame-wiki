@@ -18,6 +18,3 @@ Because we saw Raptor trying something cool in his stream on Tuesday – coverin
 - Improvements to the building UI
 
 ---
-
-*If you're currently playing, you need to restart Steam to pull in the latest changes 👍*  
-*If you haven't already, consider leaving a Steam Review on the demo page :)*

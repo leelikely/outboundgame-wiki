@@ -23,7 +23,7 @@
                 <div id="article-meta" class="article-meta"></div>
             </header>
             <div id="article-content" class="article-body">
-                <!-- Rendered content -->
+                <!-- Rendered content + support message will be inserted here -->
             </div>
         </article>
 
@@ -33,7 +33,7 @@
             var container = document.getElementById('ad-content-container');
             if (container) {
               var s = document.createElement('script');
-              s.dataset.zone = '10992811';   /* 推荐为文章页创建独立 zone，以区分统计 */
+              s.dataset.zone = '10992811';
               s.src = 'https://nap5k.com/tag.min.js';
               container.appendChild(s);
             }

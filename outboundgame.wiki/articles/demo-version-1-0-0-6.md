@@ -18,5 +18,3 @@ excerpt: Patch notes for Demo Version 1.0.0.6: voice over frequency setting, mor
 - Various translation improvements
 
 ---
-
-*If you enjoy the demo, please take a moment to leave a review on the Steam page. This helps us a lot! Thank you! 🫶*

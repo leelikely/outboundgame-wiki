@@ -18,5 +18,3 @@ excerpt: Patch notes for Demo Version 1.0.0.8: building rotation memory, version
 - Some more improvements were done for networking stability
 
 ---
-
-*If you enjoy the demo, please take a moment to leave a review on the Steam page. This helps us a lot! Thank you! 🫶*

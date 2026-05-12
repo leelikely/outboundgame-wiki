@@ -19,13 +19,13 @@
         <section class="hero">
             <h1>Outbound Game Guide</h1>
             <p>Your ultimate companion for camper van adventures, crafting, and exploration in the open world.</p>
-            <a href="#guides" class="btn">View Guides</a>
+            <a href="articles.html" class="btn">View All Guides</a>
         </section>
 
-        <section id="guides" class="guides-section">
+        <section class="guides-section">
             <h2>Latest Guides</h2>
             <div id="home-articles" class="articles-grid">
-                <!-- Dynamically populated by script.js -->
+                <!-- 动态加载最新9篇文章 -->
             </div>
             <div class="ad-banner" id="ad-banner-container"></div>
             <script>
@@ -39,6 +39,16 @@
                 }
               })();
             </script>
+        </section>
+
+        <section class="video-section">
+            <h2>Latest Videos</h2>
+            <div id="home-videos" class="video-grid">
+                <!-- 动态加载最新3个视频 -->
+            </div>
+            <p style="text-align:center; margin-top: 20px;">
+                <a href="videos.html" class="btn btn-outline">View All Videos</a>
+            </p>
         </section>
     </main>
 

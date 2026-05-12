@@ -15,5 +15,3 @@ excerpt: Patch notes for Demo Version 1.0.0.7: weather system improvements to re
 - Multiple improvements were done for networking stability
 
 ---
-
-*If you enjoy the demo, please take a moment to leave a review on the Steam page. This helps us a lot! Thank you! 🫶*
