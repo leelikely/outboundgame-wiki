@@ -8,17 +8,59 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 核心静态页面 -->
+  <!-- 核心页面 -->
   <url><loc>https://outboundgame.wiki/articles.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
   <url><loc>https://outboundgame.wiki/videos.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://outboundgame.wiki/all-guides.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://outboundgame.wiki/map.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://outboundgame.wiki/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://outboundgame.wiki/contact.html</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
-  <url><loc>https://outboundgame.wiki/privacy-policy.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://outboundgame.wiki/terms-of-service.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://outboundgame.wiki/about.html</loc><priority>0.5</priority></url>
+  <url><loc>https://outboundgame.wiki/contact.html</loc><priority>0.4</priority></url>
+  <url><loc>https://outboundgame.wiki/privacy-policy.html</loc><priority>0.2</priority></url>
+  <url><loc>https://outboundgame.wiki/terms-of-service.html</loc><priority>0.2</priority></url>
 
-  <!-- 视频播放页（按 videos.json 中的 ID） -->
+  <!-- 所有攻略文章（按字母顺序） -->
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-achievements-checklist</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-achievements-guide</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-axe-usage-guide</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-beginners-guide-day1-3</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-blueprint-guide</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-complete-map-guide</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-coop-bus-conversion</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-crafting-materials</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-faq</loc><lastmod>2026-05-12</lastmod><priority>0.7</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-game-overview</loc><lastmod>2026-05-11</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-equip-axe</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-get-everwood-planks</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-get-fiber</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-get-planks</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-make-everwood-planks</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-make-planks</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-play</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-use-axe</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-use-hiking-boots</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-links</loc><lastmod>2026-05-11</lastmod><priority>0.6</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-markers-easter-eggs</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-relaxing-game</loc><lastmod>2025-05-12</lastmod><priority>0.7</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-review</loc><lastmod>2026-05-08</lastmod><priority>0.8</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-roof-rack-design</loc><lastmod>2026-05-12</lastmod><priority>0.7</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-single-multiplayer</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-survival-tips</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-ultimate-van-guide</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-van-customization-guide</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=system-requirements</loc><lastmod>2026-05-11</lastmod><priority>0.8</priority></url>
+  
+  <!-- 公告 & 补丁 -->
+  <url><loc>https://outboundgame.wiki/article-template.html?article=coming-earlier-on-may-11th</loc><lastmod>2026-05-10</lastmod><priority>0.7</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=may-11-release-time-pricing-discount</loc><lastmod>2026-05-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-almost-here-release-info</loc><lastmod>2026-05-07</lastmod><priority>0.7</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-9</loc><lastmod>2026-03-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-8</loc><lastmod>2026-02-27</lastmod><priority>0.6</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-7</loc><lastmod>2026-02-25</lastmod><priority>0.6</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-6</loc><lastmod>2026-02-24</lastmod><priority>0.6</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-5</loc><lastmod>2026-02-19</lastmod><priority>0.6</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-4</loc><lastmod>2026-02-18</lastmod><priority>0.6</priority></url>
+
+  <!-- 视频播放页（动态参数） -->
   <url><loc>https://outboundgame.wiki/video.html?video=_x2X9azAUOQ</loc><lastmod>2026-04-14</lastmod><priority>0.7</priority></url>
   <url><loc>https://outboundgame.wiki/video.html?video=O7ta-9z_dgU</loc><lastmod>2026-05-09</lastmod><priority>0.7</priority></url>
   <url><loc>https://outboundgame.wiki/video.html?video=Gif1Gm5nYjI</loc><lastmod>2026-05-09</lastmod><priority>0.7</priority></url>
@@ -35,35 +77,4 @@
   <url><loc>https://outboundgame.wiki/video.html?video=SlfQqnbI8PY</loc><lastmod>2026-05-12</lastmod><priority>0.7</priority></url>
   <url><loc>https://outboundgame.wiki/video.html?video=DO9xItFJk88</loc><lastmod>2026-05-12</lastmod><priority>0.7</priority></url>
   <url><loc>https://outboundgame.wiki/video.html?video=DPBMZWybsYM</loc><lastmod>2026-05-06</lastmod><priority>0.7</priority></url>
-
-  <!-- 所有文章页面 -->
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-achievements-guide</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-achievements-checklist</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-markers-easter-eggs</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-complete-map-guide</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-faq</loc><lastmod>2026-05-12</lastmod><priority>0.7</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-survival-tips</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-ultimate-van-guide</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-blueprint-guide</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-crafting-materials</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-beginners-guide-day1-3</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-coop-bus-conversion</loc><lastmod>2026-05-12</lastmod><priority>0.9</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-single-multiplayer</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-roof-rack-design</loc><lastmod>2026-05-12</lastmod><priority>0.7</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-van-customization-guide</loc><lastmod>2026-05-12</lastmod><priority>0.8</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=system-requirements</loc><lastmod>2026-05-11</lastmod><priority>0.8</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-links</loc><lastmod>2026-05-11</lastmod><priority>0.6</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=gameplay-guide</loc><lastmod>2026-05-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-game-overview</loc><lastmod>2026-05-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=coming-earlier-on-may-11th</loc><lastmod>2026-05-10</lastmod><priority>0.7</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-review</loc><lastmod>2026-05-08</lastmod><priority>0.8</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=may-11-release-time-pricing-discount</loc><lastmod>2026-05-07</lastmod><priority>0.7</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-almost-here-release-info</loc><lastmod>2026-05-07</lastmod><priority>0.7</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-relaxing-game</loc><lastmod>2025-05-12</lastmod><priority>0.7</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-9</loc><lastmod>2026-03-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-8</loc><lastmod>2026-02-27</lastmod><priority>0.6</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-7</loc><lastmod>2026-02-25</lastmod><priority>0.6</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-6</loc><lastmod>2026-02-24</lastmod><priority>0.6</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-5</loc><lastmod>2026-02-19</lastmod><priority>0.6</priority></url>
-  <url><loc>https://outboundgame.wiki/article-template.html?article=demo-version-1-0-0-4</loc><lastmod>2026-02-18</lastmod><priority>0.6</priority></url>
 </urlset>

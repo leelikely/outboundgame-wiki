@@ -99,7 +99,6 @@ function loadFooter() {
     activateFooterAd();
 }
 
-/** 为页脚注入 In‑Page Push 广告（安全容器方式） */
 function activateFooterAd() {
     const container = document.getElementById('ad-footer-container');
     if (container) {
@@ -237,7 +236,7 @@ async function loadVideoPlayer() {
     }
 }
 
-/* ===== Article Detail (with support message) ===== */
+/* ===== Article Detail ===== */
 async function loadArticle() {
     const params = new URLSearchParams(window.location.search);
     const articleSlug = params.get('article');
@@ -257,8 +256,15 @@ async function loadArticle() {
         const categoryStr = meta.category ? `<span class="category-badge">${escapeHTML(meta.category)}</span>` : '';
         metaContainer.innerHTML = `${dateStr ? `<span>${dateStr}</span>` : ''} ${categoryStr}`;
 
-        const markdownHTML = (typeof marked !== 'undefined') ? marked.parse(content) : `<pre>${escapeHTML(content)}</pre>`;
+        // 渲染 Markdown 内容
+        let markdownHTML = (typeof marked !== 'undefined') ? marked.parse(content) : `<pre>${escapeHTML(content)}</pre>`;
+        
+        // 移除正文中可能存在的第一个 <h1> 标签，避免与页面顶部标题重复
+        markdownHTML = markdownHTML.replace(/<h1[^>]*>.*?<\/h1>/, '');
+
+        // 统一在末尾添加支持信息
         const supportHTML = `<div class="support-message" style="margin-top:3em;"><br><br><p>If you enjoy our content, you can also support our creators by visiting <a href="https://omg10.com/4/10992539" target="_blank">https://omg10.com/4/10992539</a>. Your support and encouragement keep us moving forward. Thank you so much!</p></div>`;
+
         document.getElementById('article-content').innerHTML = markdownHTML + supportHTML;
 
         let descriptionMeta = document.querySelector('meta[name="description"]');
