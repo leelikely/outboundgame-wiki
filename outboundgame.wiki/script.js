@@ -7,16 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
-    // 路由控制：使用正则判断，兼容“articles”和“articles.html”
+    // 路由控制：使用 startsWith 匹配带查询参数的 video.html 和 articles.html
     if (currentPath === 'index.html' || currentPath === '') {
         loadHomeArticles();
         loadHomeVideos();
     } else if (/^articles(\.html)?$/.test(currentPath)) {
-        // 匹配 "articles" 或 "articles.html"
         loadAllArticles();
     } else if (/^videos(\.html)?$/.test(currentPath)) {
         loadAllVideos();
-    } else if (currentPath === 'video.html') {
+    } else if (currentPath.startsWith('video.html')) {
         loadVideoPlayer();
     } else if (currentPath === 'all-guides.html') {
         // 静态页面无需动态加载
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-/* ===== Navigation ===== */
+/* ===== 导航栏 ===== */
 function loadNavbar() {
     const navbarContainer = document.getElementById('navbar');
     if (!navbarContainer) return;
@@ -80,7 +79,7 @@ function setupMobileMenu() {
     });
 }
 
-/* ===== Footer ===== */
+/* ===== 页脚 ===== */
 function loadFooter() {
     const footerContainer = document.getElementById('footer');
     if (!footerContainer) return;
@@ -114,7 +113,7 @@ function activateFooterAd() {
     }
 }
 
-/* ===== Home Articles (latest 9) ===== */
+/* ===== 首页：最新9篇文章 ===== */
 async function loadHomeArticles() {
     const container = document.getElementById('home-articles');
     if (!container) return;
@@ -146,7 +145,7 @@ async function loadHomeArticles() {
     }
 }
 
-/* ===== Home Videos (latest 3) ===== */
+/* ===== 首页：最新3个视频 ===== */
 async function loadHomeVideos() {
     const container = document.getElementById('home-videos');
     if (!container) return;
@@ -163,7 +162,7 @@ async function loadHomeVideos() {
     }
 }
 
-/* ===== All Articles Page ===== */
+/* ===== 全部文章页 ===== */
 async function loadAllArticles() {
     const container = document.getElementById('all-articles');
     if (!container) {
@@ -197,7 +196,7 @@ async function loadAllArticles() {
     }
 }
 
-/* ===== All Videos Page ===== */
+/* ===== 全部视频页 ===== */
 async function loadAllVideos() {
     const container = document.getElementById('all-videos');
     if (!container) return;
@@ -213,13 +212,14 @@ async function loadAllVideos() {
     }
 }
 
-/* ===== Single Video Player ===== */
+/* ===== 单个视频播放页 ===== */
 async function loadVideoPlayer() {
+    console.log('loadVideoPlayer called');
     const params = new URLSearchParams(window.location.search);
     const videoId = params.get('video');
     const container = document.getElementById('video-player');
     if (!container) {
-        console.warn('Container #video-player not found!');
+        console.error('Container #video-player not found!');
         return;
     }
     if (!videoId) {
@@ -251,7 +251,7 @@ async function loadVideoPlayer() {
     }
 }
 
-/* ===== Article Detail ===== */
+/* ===== 文章详情页 ===== */
 async function loadArticle() {
     const params = new URLSearchParams(window.location.search);
     const articleSlug = params.get('article');
@@ -303,7 +303,7 @@ function showArticleError(message) {
     document.getElementById('article-content').innerHTML = `<p>${message}</p>`;
 }
 
-/* ===== Contact Form ===== */
+/* ===== 联系表单 ===== */
 function setupContactForm() {
     const form = document.getElementById('contact-form');
     const messageDiv = document.getElementById('form-message');
@@ -321,7 +321,7 @@ function setupContactForm() {
     });
 }
 
-/* ===== Utility Functions ===== */
+/* ===== 工具函数 ===== */
 function escapeHTML(str) {
     const div = document.createElement('div');
     div.textContent = str;
