@@ -710,3 +710,51 @@ a:hover {
     height: 100%;
     border: none;
 }
+
+/* 修改后的白色背景卡片（增加顶部间距） */
+.page-bg-white {
+    background: #ffffff;
+    padding: 36px 32px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    margin: 80px auto 40px auto;   /* 顶部间距加大至 80px，可根据需要调整 */
+    max-width: 820px;
+}
+
+/* 修改后的暖黄背景卡片（同样增加顶部间距） */
+.page-bg-warm {
+    background: #fef8e7;
+    padding: 36px 32px;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    margin: 80px auto 40px auto;
+    max-width: 820px;
+}
+
+/* 视频播放页已有白色背景板，但内部播放器容器不再需要额外白底 */
+#video-player {
+    background: transparent;      /* 外层 page-bg-white 已是白色 */
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+/* 修复视频播放器比例 */
+#video-player .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    background: #000;
+}
+#video-player .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
