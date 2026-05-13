@@ -7,12 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
+    // 路由控制：使用正则判断，兼容“articles”和“articles.html”
     if (currentPath === 'index.html' || currentPath === '') {
         loadHomeArticles();
         loadHomeVideos();
-    } else if (currentPath === 'articles.html') {
+    } else if (/^articles(\.html)?$/.test(currentPath)) {
+        // 匹配 "articles" 或 "articles.html"
         loadAllArticles();
-    } else if (currentPath === 'videos.html') {
+    } else if (/^videos(\.html)?$/.test(currentPath)) {
         loadAllVideos();
     } else if (currentPath === 'video.html') {
         loadVideoPlayer();
@@ -34,8 +36,8 @@ function loadNavbar() {
 
     const links = [
         { name: 'Home', href: 'index.html', active: currentPath === 'index.html' || currentPath === '' },
-        { name: 'Guides', href: 'articles.html', active: currentPath === 'articles.html' },
-        { name: 'Videos', href: 'videos.html', active: currentPath === 'videos.html' },
+        { name: 'Guides', href: 'articles.html', active: /^articles/.test(currentPath) },
+        { name: 'Videos', href: 'videos.html', active: /^videos/.test(currentPath) },
         { name: 'Map', href: 'map.html', active: currentPath === 'map.html' },
         { name: 'About', href: 'about.html', active: currentPath === 'about.html' },
         { name: 'Contact', href: 'contact.html', active: currentPath === 'contact.html' }
@@ -164,12 +166,19 @@ async function loadHomeVideos() {
 /* ===== All Articles Page ===== */
 async function loadAllArticles() {
     const container = document.getElementById('all-articles');
-    if (!container) return;
+    if (!container) {
+        console.warn('Container #all-articles not found!');
+        return;
+    }
     try {
         const response = await fetch('/articles/articles.json');
         if (!response.ok) throw new Error('Failed to load articles');
         const articles = await response.json();
         articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+        if (articles.length === 0) {
+            container.innerHTML = '<p>No guides published yet.</p>';
+            return;
+        }
         container.innerHTML = articles.map(article => `
             <div class="article-card">
                 <div class="article-card-content">
@@ -260,8 +269,6 @@ async function loadArticle() {
         metaContainer.innerHTML = `${dateStr ? `<span>${dateStr}</span>` : ''} ${categoryStr}`;
 
         let markdownHTML = (typeof marked !== 'undefined') ? marked.parse(content) : `<pre>${escapeHTML(content)}</pre>`;
-        
-        // 移除正文中的第一个 <h1> 避免重复标题
         markdownHTML = markdownHTML.replace(/<h1[^>]*>.*?<\/h1>/, '');
 
         const supportHTML = `<div class="support-message" style="margin-top:3em;"><br><br><p>If you enjoy our content, you can also support our creators by visiting <a href="https://omg10.com/4/10992539" target="_blank">https://omg10.com/4/10992539</a>. Your support and encouragement keep us moving forward. Thank you so much!</p></div>`;
