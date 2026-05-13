@@ -218,7 +218,10 @@ async function loadVideoPlayer() {
     const params = new URLSearchParams(window.location.search);
     const videoId = params.get('video');
     const container = document.getElementById('video-player');
-    if (!container) return;
+    if (!container) {
+        console.warn('Container #video-player not found!');
+        return;
+    }
     if (!videoId) {
         container.innerHTML = '<p>No video specified.</p>';
         return;
