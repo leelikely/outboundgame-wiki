@@ -207,7 +207,6 @@ async function loadAllVideos() {
 async function loadVideoPlayer() {
     const container = document.getElementById('video-player');
     if (!container) return;
-    // 先显示加载提示
     container.innerHTML = '<p style="color:#888;">Loading video…</p>';
 
     const params = new URLSearchParams(window.location.search);
@@ -263,7 +262,7 @@ async function loadArticle() {
 
         let markdownHTML = (typeof marked !== 'undefined') ? marked.parse(content) : `<pre>${escapeHTML(content)}</pre>`;
         markdownHTML = markdownHTML.replace(/<h1[^>]*>.*?<\/h1>/, '');
-        const supportHTML = `<div class="support-message" style="margin-top:3em;"><br><br><p>If you enjoy our content, you can also support our creators by visiting <a href="https://omg10.com/4/10992539" target="_blank">https://omg10.com/4/10992539</a>. Your support and encouragement keep us moving forward. Thank you so much!</p></div>`;
+        const supportHTML = `<div class="support-message" style="margin-top:3em;"><br><br><p>If you enjoy our content, you can also support our creators by visiting <a href="https://omg10.com/4/11001497" target="_blank">https://omg10.com/4/11001497</a>. Your support and encouragement keep us moving forward. Thank you so much!</p></div>`;
         document.getElementById('article-content').innerHTML = markdownHTML + supportHTML;
 
         let descMeta = document.querySelector('meta[name="description"]');
