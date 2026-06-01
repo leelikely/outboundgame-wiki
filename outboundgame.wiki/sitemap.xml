@@ -3,7 +3,7 @@
   <!-- 首页 -->
   <url>
     <loc>https://outboundgame.wiki/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,7 +18,19 @@
   <url><loc>https://outboundgame.wiki/privacy-policy.html</loc><priority>0.2</priority></url>
   <url><loc>https://outboundgame.wiki/terms-of-service.html</loc><priority>0.2</priority></url>
 
-  <!-- ===== 2026-05-23 新攻略 ===== -->
+  <!-- ===== 2026-06-01 新攻略 ===== -->
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-make-torches</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-complete-map-guide-v083</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-get-rope</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-get-iron</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-get-stone</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-beginners-optimal-start</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-map-regions-guide</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-workbench-crafting-guide</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-get-leather</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-how-to-save-game</loc><lastmod>2026-06-01</lastmod><priority>0.9</priority></url>
+
+  <!-- ===== 2026-05-23 攻略 ===== -->
   <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-everwood-planks-all-methods</loc><lastmod>2026-05-23</lastmod><priority>0.9</priority></url>
   <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-hiking-boots-guide-detailed</loc><lastmod>2026-05-23</lastmod><priority>0.9</priority></url>
   <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-axe-equip-mistakes</loc><lastmod>2026-05-23</lastmod><priority>0.9</priority></url>
