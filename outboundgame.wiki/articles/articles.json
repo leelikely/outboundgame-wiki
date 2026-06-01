@@ -1,5 +1,75 @@
 [
     {
+        "title": "How to Make Torches in Outbound: Essential Night Lighting Guide",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "Nighttime is pitch‑black and dangerous. Learn to craft torches, place them strategically, and explore safely after dark.",
+        "filename": "outbound-how-to-make-torches"
+    },
+    {
+        "title": "Outbound Complete Map Guide v0.8.3: All 3 Regions, Landmarks & Secrets",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "Explore every region in Outbound v0.8.3 — The Outdoors, The Coast, and the brand‑new Canyons. Full landmark list, tips, and upcoming content.",
+        "filename": "outbound-complete-map-guide-v083"
+    },
+    {
+        "title": "How to Get Rope in Outbound: Crafting and Gathering Methods",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "Rope is used in bows, traps, bridge repairs, and backpack upgrades. Learn the crafting recipe and best fiber farming spots.",
+        "filename": "outbound-how-to-get-rope"
+    },
+    {
+        "title": "How to Get Iron in Outbound: Ore Locations and Smelting Guide",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "Iron is the gateway to mid‑game. Find the best ore locations, learn smelting, and craft advanced tools and upgrades.",
+        "filename": "outbound-how-to-get-iron"
+    },
+    {
+        "title": "How to Get Stone in Outbound: Complete Mining and Gathering Guide",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "Stone is the most underestimated resource in Outbound. Learn the best mining spots, pickaxe method, and scavenging tricks.",
+        "filename": "outbound-how-to-get-stone"
+    },
+    {
+        "title": "Outbound Beginner's Optimal Start: Best Route to Avoid Wasted Time",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "A proven 2‑hour starter route that gets you the axe, sawmill, bridge repair, and access to the Coast — with zero wasted effort.",
+        "filename": "outbound-beginners-optimal-start"
+    },
+    {
+        "title": "Outbound Map Guide: All Region Locations, Landmarks & Secrets",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "A complete walkthrough of every region in Outbound, from The Outdoors to The Coast. Discover landmark locations, hidden secrets, and exploration tips.",
+        "filename": "outbound-map-regions-guide"
+    },
+    {
+        "title": "Outbound Workbench Guide: How to Craft and Unlock More Recipes",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "Master the Workbench — your primary crafting station. Learn how to unlock new blueprints and prioritise the best recipes.",
+        "filename": "outbound-workbench-crafting-guide"
+    },
+    {
+        "title": "How to Get Leather in Outbound: 3 Efficient Farming Methods",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "Leather is required for hiking boots, backpacks, and belts. Here are the three best ways to farm it — from hunting to recycling.",
+        "filename": "outbound-how-to-get-leather"
+    },
+    {
+        "title": "How to Save Your Game in Outbound: Auto-Save & Manual Save Methods",
+        "date": "2026-06-01",
+        "category": "Guides",
+        "excerpt": "Confused about Outbound's save system? Learn how auto-save works, plus two reliable ways to manually force a save.",
+        "filename": "outbound-how-to-save-game"
+    },
+    {
         "title": "How Long to Beat Outbound? Story, Casual, and 100% Completion Times",
         "date": "2026-05-23",
         "category": "Guides",
@@ -21,10 +91,10 @@
         "filename": "outbound-axe-chopping-guide"
     },
     {
-        "title": "How to Make Planks in Outbound: Beginner’s Sawmill Crafting Guide",
+        "title": "How to Make Planks in Outbound: Beginner's Sawmill Crafting Guide",
         "date": "2026-05-23",
         "category": "Guides",
-        "excerpt": "Can’t repair the bridge? Follow this step‑by‑step tutorial to unlock the Sawmill and turn logs into planks.",
+        "excerpt": "Can't repair the bridge? Follow this step‑by‑step tutorial to unlock the Sawmill and turn logs into planks.",
         "filename": "outbound-crafting-planks-beginners"
     },
     {
@@ -45,14 +115,14 @@
         "title": "How to Get Planks Without a Sawmill in Outbound: Looting, Breaking, and Trading",
         "date": "2026-05-23",
         "category": "Guides",
-        "excerpt": "Don’t have a Sawmill yet? Here’s how to get planks by scavenging, smashing crates, and recycling furniture.",
+        "excerpt": "Don't have a Sawmill yet? Here's how to get planks by scavenging, smashing crates, and recycling furniture.",
         "filename": "outbound-plank-alternative-methods"
     },
     {
         "title": "How to Equip the Axe in Outbound: Avoid the Most Common Newbie Mistake",
         "date": "2026-05-23",
         "category": "Guides",
-        "excerpt": "Can’t use your newly crafted axe? You’re probably trying to drag it to the wrong slot. Here’s the fix.",
+        "excerpt": "Can't use your newly crafted axe? You're probably trying to drag it to the wrong slot. Here's the fix.",
         "filename": "outbound-axe-equip-mistakes"
     },
     {
@@ -133,7 +203,7 @@
         "filename": "outbound-crafting-materials"
     },
     {
-        "title": "Outbound Beginner’s Guide – First 3 Days Walkthrough",
+        "title": "Outbound Beginner's Guide – First 3 Days Walkthrough",
         "date": "2026-05-12",
         "category": "Guides",
         "excerpt": "A complete, step‑by‑step guide for your first 3 days in Outbound. Learn how to get tools, fix the bridge, and set up a sustainable base.",
@@ -154,10 +224,10 @@
         "filename": "outbound-single-multiplayer"
     },
     {
-        "title": "Outbound’s Genius Roof Rack – Folding Space Magic",
+        "title": "Outbound's Genius Roof Rack – Folding Space Magic",
         "date": "2026-05-12",
         "category": "Guides",
-        "excerpt": "The roof rack in Outbound hides a brilliant piece of design – expanding storage that feels like sci‑fi folding technology. Here’s why players love it.",
+        "excerpt": "The roof rack in Outbound hides a brilliant piece of design – expanding storage that feels like sci‑fi folding technology. Here's why players love it.",
         "filename": "outbound-roof-rack-design"
     },
     {
