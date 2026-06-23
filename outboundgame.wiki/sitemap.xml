@@ -3,7 +3,7 @@
   <!-- 首页 -->
   <url>
     <loc>https://outboundgame.wiki/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,7 +18,12 @@
   <url><loc>https://outboundgame.wiki/privacy-policy.html</loc><priority>0.2</priority></url>
   <url><loc>https://outboundgame.wiki/terms-of-service.html</loc><priority>0.2</priority></url>
 
-  <!-- ===== 2026-06-03 新攻略 ===== -->
+  <!-- ===== 2026-06-23 新攻略 ===== -->
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-leveling-fast-xp-guide</loc><lastmod>2026-06-23</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-monster-guide-stats-locations</loc><lastmod>2026-06-23</lastmod><priority>0.9</priority></url>
+  <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-abandoned-house-loot-guide</loc><lastmod>2026-06-23</lastmod><priority>0.9</priority></url>
+
+  <!-- ===== 2026-06-03 攻略 ===== -->
   <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-hidden-chest-locations</loc><lastmod>2026-06-03</lastmod><priority>0.9</priority></url>
   <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-broken-bridge-locations-materials</loc><lastmod>2026-06-03</lastmod><priority>0.9</priority></url>
   <url><loc>https://outboundgame.wiki/article-template.html?article=outbound-resource-respawn-guide</loc><lastmod>2026-06-03</lastmod><priority>0.9</priority></url>
